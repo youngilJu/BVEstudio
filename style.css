@@ -1,0 +1,550 @@
+@charset "UTF-8";
+/*font*/
+@font-face {
+    font-family: 'beanpoleotB00';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/beanpoleotB00.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}/*font-family: 'beanpoleotB00';*/
+@font-face {
+    font-family: 'beanpoleotM00';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/beanpoleotM00.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}/*font-family: 'beanpoleotM00';*/
+@font-face {
+    font-family: 'beanpoleotL00';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/beanpoleotL00.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}/*font-family: 'beanpoleotL00';*/
+@font-face {
+    font-family: 'GongGothicBold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10@1.0/GongGothicBold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}/*font-family: 'GongGothicBold';*/
+@font-face {
+    font-family: 'GongGothicMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10@1.0/GongGothicMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}/*font-family: 'GongGothicMedium';*/
+@font-face {
+    font-family: 'GongGothicLight';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10@1.0/GongGothicLight.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}/*font-family: 'GongGothicLight';*/
+@font-face {
+    font-family: 'GmarketSansBold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}/*font-family: 'GmarketSansBold';*/
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}/*font-family: 'GmarketSansMedium';*/
+@font-face {
+    font-family: 'GmarketSansLight';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansLight.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}/*font-family: 'GmarketSansLight';*/
+
+
+*{margin: 0; padding: 0;}
+a{text-decoration: none; color: inherit;}
+ul, ol{list-style: none;}
+.clearfix::after{content: ""; display: block; clear: both;}
+body{
+    font-size: 16px;
+    font-family: 'GmarketSansLight';
+    line-height: 20px;
+    color: #333;
+    background: url(img/bg1.jpg) repeat 0% 10%;
+}
+h1{
+    font-family: 'beanpoleotB00';
+}
+.title{
+    font-size: 72px;
+}
+/*header*/
+header{
+    width: 100%;
+    background-color: #fff;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    z-index: 10;
+    padding: 10px 0;
+}
+#header_inner{
+    margin: 0 auto; width: 1320px;
+}
+#header_inner>img{
+    float: left;
+}
+#header_inner>ul{
+    float: right;
+}
+#header_inner>ul>li{
+    font-family: 'beanpoleotB00';
+    display: inline-block;
+    padding-right: 30px;
+    padding-top: 20px;
+    font-size: 30px;
+}
+
+/*mb*/
+#mb{
+    position: relative; text-align: center;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+#mb>iframe{
+    position: absolute;
+    top: 50%; left: 0%;
+    transform: translateY(-50%);
+}
+#mb>img{
+    position: absolute;
+    top: 36%; left: 43%;
+}
+/*intro*/
+#intro{
+    margin: 0 auto; width: 1320px;
+    padding-bottom: 100px;
+    padding-top: 150px;
+
+}
+.line_1{
+    padding: 15px 0;
+}
+#intro>p{
+    font-family: 'beanpoleotM00';
+    font-size: 36px;
+    padding-bottom: 50px;
+}
+
+/*about*/
+.sub_title{
+    font-size: 50px;
+}
+#about{
+    margin: 0 auto; width: 1320px;
+}
+#about>h1{
+    padding: 50px 0;
+    font-size: 50px;
+}
+.logo_box{
+    float: left;
+    margin-left: 130px;
+}
+#about>.logo_box:hover{
+    transform: scale(1.1,1.1);
+    transition: all 0.3s;
+}
+.about_bve{
+    float: right; width: 660px; padding-top: 50px;
+}
+.about_bve>ul>li{
+    font-family: 'GongGothicMedium';
+    font-size: 50px; height: 100%;
+    padding: 20px 0;
+}
+.about_bve>p{
+    font-family: 'GmarketSansMedium';
+}
+/*values*/
+#values{
+    margin: 0 auto; width: 1320px;
+    padding: 100px 0; font-family: 'GmarketSansMedium';
+}
+#values>h1{
+    padding-bottom: 50px;
+}
+#values>ul{
+    display: flex;
+    /*li에 float:left를 한 것과 동일한 역할*/
+    justify-content: space-between;
+    /*li의 너비에 따라서 전체적으로 고르게 분배를 시킨다.*/
+}
+#values>ul>li{
+    text-align: center; font-size: 20px;
+}
+#values>ul>li>img:hover{
+    transform:translateY(-20px);
+    transition: all 0.5s;
+}
+#values>ul>li>h2{
+    font-family: 'beanpoleotL00'; font-size: 40px;
+    padding: 25px 0;
+}
+#values>ul>li>p{
+    line-height: 25px; 
+}
+.purple{
+    color: #6623d1;
+}
+.pink{
+    color: #ed72d0;
+}
+.blue{
+ color: #0026e8;
+}
+/*vision*/
+#vision{
+    margin: 0 auto; width: 1320px; padding-bottom: 100px;
+}
+#vision>h1{
+    padding-bottom: 70px;
+}
+#vision>p{
+    line-height: 30px; font-family: 'GmarketSansLight';
+    text-align: center;
+}
+#vision>p>span{
+    font-family: 'GmarketSansMedium';
+}
+#vision_img>ul>li:nth-child(1):hover{
+    transform:translateY(-20px);
+    transition:all 0.5s;
+}
+#vision_img>ul>li:nth-child(2):hover{
+    transform:translateY(20px);
+    transition:all 0.5s;
+}
+.vision_top{
+    padding-bottom: 60px; font-size: 23px;
+}
+.vision_bottom{
+    padding-top: 60px; font-size: 23px; 
+}
+#vision_img>ul{
+    display: flex;
+    /*li에 float:left를 한 것과 동일한 역할*/
+    justify-content: space-between;
+    /*li의 너비에 따라서 전체적으로 고르게 분배를 시킨다.*/
+}
+#vision_img>ul>li{
+    text-align: center;
+}
+#vision_img>ul>li>.img_box1>h1{
+    padding: 80px 0; color: #934ee1;
+    font-family: 'GmarketSansMedium';
+    font-size: 30px; letter-spacing: -2px;
+}
+#vision_img>ul>li>.img_box2>h1{
+    padding: 80px 0; color: #934ee1;
+    font-family: 'GmarketSansMedium';
+    font-size: 30px; letter-spacing: -2px;
+}
+/*what we do?*/
+/*bg2*/
+#bg2{
+    display: block;
+    overflow: hidden;
+    height: 2160px;
+    position: relative;
+}
+#bg2>video{
+    position: absolute;
+    top: 0%; left: 50%;
+    transform: translateX(-50%);
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    overflow: hidden;
+}
+#do{
+    margin: 0 auto; width: 1320px;
+    padding-top: 150px;
+}
+#do>p{
+    font-family: 'beanpoleotM00';
+    font-size: 36px;
+    padding-bottom: 50px;
+}
+
+/*servies*/
+#servies{
+    margin: 0 auto; width: 1320px;
+}
+#servies>h1{
+    padding-bottom: 50px;
+}
+.servies_box,.box2{
+    text-align: center;
+}
+.servies_box1{
+    background: url(img/servies1.jpg) no-repeat;
+    overflow: hidden;
+    border-radius: 25px;
+    opacity: 90%;
+}
+.servies_box2{
+    background: url(img/servies2.jpg) no-repeat;
+    overflow: hidden;
+    border-radius: 25px;
+    opacity: 90%;
+}
+.servies_box3{
+    background: url(img/servies3.jpg) no-repeat;
+    overflow: hidden;
+    border-radius: 25px;
+    opacity: 90%;
+}
+.servies_box4{
+    background: url(img/servies4.jpg) no-repeat;
+    overflow: hidden;
+    border-radius: 25px;
+    opacity: 90%;
+}
+.box1{
+    padding-bottom: 10px;
+}
+/*add*/
+#add{
+    margin: 0 auto; width: 1320px;
+    padding: 230px 0;
+}
+#add>h1{
+    padding-bottom: 200px;
+}
+#add>ul{
+    display: flex;
+    /*li에 float:left를 한 것과 동일한 역할*/
+    justify-content: space-between;
+    /*li의 너비에 따라서 전체적으로 고르게 분배를 시킨다.*/
+}
+#add>ul>li{
+    text-align: center;
+    opacity: 85%;
+}
+#add>ul>li:nth-child(1):hover{
+    opacity: 100%;
+    transition: all 0.3s;
+}
+#add>ul>li:nth-child(2):hover{
+    opacity: 100%;
+    transition: all 0.3s;
+}
+#add>ul>li:nth-child(3):hover{
+    opacity: 100%;
+    transition: all 0.3s;
+}
+#add>ul>li:nth-child(4):hover{
+    opacity: 100%;
+    transition: all 0.3s;
+}
+#add>ul>li>img{
+    padding-bottom: 60px;
+}
+.add_text{
+    font-family: 'GongGothicLight';
+    color: #fff;
+    background-color: #b071eb;
+    padding: 20px 30px;
+    border-radius: 20px;
+}
+
+/*make*/
+#make{
+    background-color: #000;
+}
+#make_inner{
+    margin: 0 auto; width: 1320px;
+    padding: 100px 0;
+    padding-top: 150px;
+}
+#make>#make_inner>h1{
+    color: #fff;
+}
+#make>#make_inner>img{
+    padding-bottom: 20px;
+}
+#make_inner>p{
+    font-family: 'beanpoleotM00';
+    font-size: 36px;
+    padding-bottom: 30px;
+    color: #fff;
+}
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+.swiper-slide {
+    text-align: center;
+}
+.swiper-slide>h3{
+    padding: 40px 0;
+    font-family: 'GongGothicLight';
+    color: #fff;
+}
+.make>.swiper-button-next,
+.make>.swiper-button-prev{
+    color: #fff;
+}
+.make>.swiper-pagination>span{
+    background-color: #fff;
+}
+/*contact*/
+#contact{
+    background-color: #000;
+    padding-bottom: 100px;
+    padding-top: 150px;
+}
+#contact_inner{
+    margin: 0 auto; width: 1320px;
+    position: relative;
+}
+#contact>#contact_inner>h1{
+    color: #fff;
+}
+#contact_inner>p{
+    font-family: 'beanpoleotM00';
+    font-size: 36px;
+    padding-bottom: 50px;
+    color: #fff;
+}
+#contact_box{
+    color: #fff; font-family: 'GongGothicLight';
+    padding-top: 50px;
+}
+.name,.phone,.email,.company,.file,.project{
+    border: none;
+    border-bottom: 5px solid #d9a3fc;
+    /*원래 인풋 태그에 보더가 들어가 있어서, 원래 스타일을 border:none으로 없앤 다음, 원하는 스타일로 만들어 주었다.*/
+    outline-style: none;
+    /*인풋부분을 클릭했을때 나오는 검정 선을 없앰.*/
+    font-size: 25px;
+    /*안에 써지는 글자 크기를 설정*/
+    padding: 5px;
+    /*글씨가 쓰여지는 부분과, 보더 사이의 거리를 만들어줌. 백그라운드가 들어간 경우에는, 백그라운드의 영역이 커진다.*/
+    width: 280px;
+    background: none;
+    color:#fff;
+    font-family: 'GongGothicLight';
+}
+.file{
+    width: 650px;
+    border: 5px solid #d9a3fc;
+}
+.project{
+    width: 650px; height: 200px; border: 5px solid #d9a3fc;
+}
+.name::placeholder,.phone::placeholder,
+.email::placeholder,.company::placeholder,
+.file::placeholder,.project::placeholder{
+    color: #fff; font-family: 'GongGothicLight';
+}
+.send{
+    color: #fff; font-family: 'GongGothicLight'; font-size: 25px;
+    background-color: #d9a3fc; padding: 20px 75px; display: inline-block;
+    margin-top: 165px;
+}
+.name, .email{
+    margin-right: 85px;
+}
+#name_phone,#mail_company,#file{
+    padding-bottom: 100px;
+}
+#ours{
+    color: #fff;
+    font-family: 'GongGothicLight';
+    position: absolute;
+    top: 30%;
+    left: 60%;
+    line-height: 100%;
+    text-align: right;
+}
+#ours>h1{
+    font-size: 45px;
+    border-bottom: 5px solid  #d9a3fc;
+    padding-bottom: 5px;
+    display: inline-block;
+}
+#ours>h3{
+    font-size: 45px;
+    font-weight: 100;
+    padding-top: 50px;
+}
+#ours>p{
+    font-size: 23px;
+    padding-top: 50px;
+    line-height: 100%;
+}
+#ours>ul{
+    display: flex;
+    /*li에 float:left를 한 것과 동일한 역할*/
+    justify-content: space-between;
+    /*li의 너비에 따라서 전체적으로 고르게 분배를 시킨다.*/
+    padding-top: 50px;
+}
+#ours>ul>li:nth-child(1)>a{
+    background: url(img/sns1.png) no-repeat center;
+    width: 44px; height: 44px;
+    display: block;
+}
+#ours>ul>li:nth-child(2)>a{
+    background: url(img/sns2.png) no-repeat center;
+    width: 44px; height: 44px;
+    display: block;
+}
+#ours>ul>li:nth-child(3)>a{
+    background: url(img/sns3.png) no-repeat center;
+    width: 44px; height: 44px;
+    display: block;
+}
+#ours>ul>li:nth-child(4)>a{
+    background: url(img/sns4.png) no-repeat center;
+    width: 44px; height: 44px;
+    display: block;
+}
+#ours>ul>li:nth-child(1)>a:hover{
+    transition: all 0.5s;
+    background: url(img/sns1_1.png) no-repeat;
+    display: block;
+    width: 44px; height: 44px;
+}
+#ours>ul>li:nth-child(2)>a:hover{
+    transition: all 0.5s;
+    background: url(img/sns2_1.png) no-repeat;
+    display: block;
+    width: 44px; height: 44px;
+}
+#ours>ul>li:nth-child(3)>a:hover{
+    transition: all 0.5s;
+    background: url(img/sns3_1.png) no-repeat;
+    display: block;
+    width: 44px; height: 44px;
+}
+#ours>ul>li:nth-child(4)>a:hover{
+    transition: all 0.5s;
+    background: url(img/sns4_1.png) no-repeat;
+    display: block;
+    width: 44px; height: 44px;
+}
+/*footer*/
+footer{
+    background-color: #000;
+    border-top: 3px solid #d9a3fc;
+    color: #fff;
+    text-align: center;
+    font-size: 24px;
+    line-height: 120%;
+}
+footer>p{
+    padding: 15px 0;
+    font-size: 15px;
+    line-height: 100%;
+}
